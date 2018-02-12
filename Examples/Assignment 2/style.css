@@ -1,0 +1,11 @@
+#maintitle {
+  color: #FFCC00;
+  width: 400px
+  height: 400px
+  border: 2px solid #FFCC00
+  padding: 25px
+  padding-top: 100px
+
+}
+
+h1, h2, h3, p, table, li { font-size: 36px; }
