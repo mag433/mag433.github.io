@@ -28,7 +28,7 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
-    color: white;
+    color: black;
 }
 
 a:active {
@@ -37,7 +37,10 @@ a:active {
    {
   color: green;
 
+
+
 }
+.bold {font-weight: bolder;}
 #About {text-decoration: underline;}
 
 #Schedule {text-decoration: overline;}
