@@ -40,6 +40,8 @@ a:active {
 }
 #About {text-decoration: underline;}
 
+#Schedule {text-decoration: overline;}
+
 .leftcol {
   width:355px;
   border: 2px solid black;
