@@ -42,6 +42,8 @@ a:active {
 
 #Schedule {text-decoration: overline;}
 
+#header {font-size: 50px}
+
 .leftcol {
   width:355px;
   border: 2px solid black;
