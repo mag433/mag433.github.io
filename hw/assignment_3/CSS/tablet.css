@@ -1,17 +1,36 @@
 header h1 {
+  font-size: 100px;
   height: 100px;
-  padding-top:50px;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+nav ul {
   text-align: center;
 }
-
-
-nav ul {text-align: center;}
-
-
 nav li {
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
+  font-family: 'Comfortaa', cursive;
+  padding: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   display: inline;
 }
+.square-img {
+  display: block;
+  height: auto;
+  width: auto;
+ }
+.wide-img {
+  display: block;
+ }
+ .gallery { width: 100%;}
+ .outerimage { height: auto;}
+ .gallery li {
+   width: 45%;
+   margin: 2%;
+   margin-top: 10px;
+   margin-bottom:10px;
+   float: left;
+ }

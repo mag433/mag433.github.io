@@ -1,6 +1,24 @@
+header h1 {
+  font-size: 75px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
 nav li {
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
+  font-family: 'Comfortaa', cursive;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.outerimage { height: auto;}
+.square-img {
+  display: block;
+ }
+.wide-img {
+  display: none;
+ }
+ .gallery li {
+   margin: 20px;
+
+ }
