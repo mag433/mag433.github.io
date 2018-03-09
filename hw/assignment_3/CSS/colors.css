@@ -1,8 +1,8 @@
-.dark-bg { background: #AE4300; }
+.dark-bg { background: #7A5D6C; }
 .medium-bg { background: #FF6708; }
-.light-bg { background: #FFA066; }
+.light-bg { background: #958272; }
 
-.dark-txt { color: #AE4300; }
+.dark-txt { color: white; }
 .medium-txt { color: #FF6708; }
 .light-txt { color: #FFA066;}
 
@@ -30,7 +30,7 @@
 }
 .innertext {
  font-size: 30px;
- color: darkgreen;
+ color: #FFA066;
  font-family: 'Comfortaa', cursive;
  padding: 40px;
  text-shadow: 1px 1px 3px #888; /* Chrome, Firefox 3.5+, IE 10+, Opera 9+, Safari 1+ */
