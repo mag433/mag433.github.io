@@ -1,5 +1,5 @@
 .dark-bg { background: #7A5D6C; }
-.medium-bg { background: #FF6708; }
+.medium-bg { background: #0A1E05; }
 .light-bg { background: #958272; }
 
 .dark-txt { color: white; }
@@ -37,6 +37,11 @@
 
 }
 
+.bio {
+  color: white;
+font-family: 'Comfortaa', cursive;
+padding: 40px;
+text-shadow: 1px 1px 3px #888}
 
 /* A comment */
 body {

@@ -22,3 +22,10 @@ nav li {
    margin: 20px;
 
  }
+ .bio {text-align: center;
+ font-size: 12px;
+ font-family: 'Comfortaa', cursive;
+ padding: 50px;
+ padding-top: 15px;
+ padding-bottom: 15px;
+ display: inline;}
