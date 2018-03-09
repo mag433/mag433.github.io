@@ -36,9 +36,10 @@ nav li {
  }
 .wide-img {
   display: block;
-  width: 900px;
+  width: 300px top center no-repeat;
   float: center;
   height: auto;
+
  }
  /* Gallery layout */
  .gallery { width: 960px;}
