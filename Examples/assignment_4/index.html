@@ -3,27 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>How to guide</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-    $(function(){
-
-        $('#mainTitle' ).click(function() {
-          //alert( "handler for .click() called.");
-          $('#mainImage').hide();
-        });
-        $('#otherTitle' ).click(function() {
-          //alert( "handler for .click() called.");
-          $('#mainImage').show();
-        });
-    });
-
-
-        </script>
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <h1 id="mainTitle" class="pageName">Hide Image</h1>
-    <h1 id="otherTitle" class="pageName">Show Image</h1>
-    <img id="mainImage"src="https://placehold.it/200x200" alt="">
+      <h1 id="title">How to do something
+          <i class="fas fa-arrow-alt-circle-left"></i>
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button id="getStarted">Let's get started</button>
+          <ol id="howTo">
+            <li class="active">
+            <h2> Step 1: Do This </h2>
+            <img src="https://placehold.it/640x480" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </li>
+            <li>
+              <h2> Step 2: Do This </h2>
+              <img src="https://placehold.it/640x480" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <li>
+              <h2> Step 3: Do This </h2>
+              <img src="https://placehold.it/640x480" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </li>
+        </li>
+      </ol>
+
+      <button id="previous">Previous</button>
+      <button id="next">Next</button>
+
   </body>
 </html>
