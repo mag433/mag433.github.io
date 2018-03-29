@@ -16,7 +16,7 @@ h2, h3, p, table, li {
   text-align: center;
   color: white;
 }
-.image-bg { background-image: url("/Users/matthewgagnon/Documents/GitHub/mag433.github.io/images/coding.jpg");
+.image-bg { background-image: url("images/coding.jpg");
 background-size: cover;
 background-repeat: repeat;
 background-position: center; }
