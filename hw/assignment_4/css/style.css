@@ -1,0 +1,17 @@
+#howTo li {display: none;}
+#howTo li.active {display: block;}
+.image-bg {
+  background-image: url("../images/eggback.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center; }
+
+  body {color: white;
+    font-size: 20px;
+    height: 100px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    font-family: 'Courgette', cursive;
+  }

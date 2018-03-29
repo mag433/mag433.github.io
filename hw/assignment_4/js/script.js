@@ -26,14 +26,14 @@ $(function(){
 $('#yes').on('click',function(){
   $('#surveytitle').css("background-color","green");
   $('#survey').css({
-    "border":"1px solid green",
+    "border":"1px black",
     "background":"#ccc"
   });
     });
   $('#no').on('click',function(){
     $('#surveytitle').css("background-color","red");
     $('#survey').css({
-      "border":"1px solid green",
+      "border":"1px black",
       "background":"#FFFFFF"
     });
 });
@@ -48,7 +48,7 @@ $('#yes').on('click',function(){
 
     nextItem.toggleClass('active');
 
-    // Conditional eval.
+
     if($('li').last().hasClass('active')) {
       $('#next').hide();
       $('#finish').show();
@@ -56,7 +56,7 @@ $('#yes').on('click',function(){
       $('#next').show();
     }
 
-    // Conditional eval.
+
     if($('li').first().hasClass('active')) {
       $('#previous').hide();
     } else {
@@ -68,13 +68,9 @@ $('#yes').on('click',function(){
   });
 
   $('#previous').on('click',function(){
-    //First, we need to keep track of the current slide and the next slide. We achieve this by storing our elements in variables.
+
     var currentItem = $('li.active');
-    //Position based selectors:
-    // first() https://api.jquery.com/first/
-    // last() https://api.jquery.com/last/
-    // prev() Documentation https://api.jquery.com/prev/
-    // next() Documentation https://api.jquery.com/next/
+
     var previousItem = $('li.active').prev();
 
     currentItem.toggleClass('active');
