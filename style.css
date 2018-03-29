@@ -1,0 +1,42 @@
+h1 {font-size: 100px;
+font-family: 'Comfortaa';
+padding-top: 50px;
+text-align: center;
+color: white}
+
+h2, h3, p, table, li {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Comfortaa';
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.image-bg { background-image: url("/Users/matthewgagnon/Documents/GitHub/mag433.github.io/images/coding.jpg");
+background-size: cover;
+background-repeat: repeat;
+background-position: center; }
+
+
+a:link {
+    text-decoration: none;
+    color: orange;
+}
+
+a:visited {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+a:active {
+    text-decoration: underline;
+}
