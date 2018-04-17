@@ -1,9 +1,9 @@
 .marquee {
   overflow: hidden;
-  font-size: 30px;
-  color: yellow;
-  background-color: darkred;
+  font-size: 100px;
+  color: darkred;
 }
+
 
 .imagess {
   display: block;
@@ -17,9 +17,12 @@
 .head {font-size: 100;
 text-align: center;
 color: darkred;
+font-family: Courgette;
 }
 
 .image-bg {
+  font-size: 30;
+  font-family: Comfortaa;
   background-image: url("images/barcbg.jpg");
   border: 4px solid darkblue;
   width: 1000px;
@@ -27,7 +30,9 @@ color: darkred;
   margin-left: auto;
   margin-right: auto;
   padding-top:30px;
-  padding-bottom: 30px;}
+  padding-bottom: 30px;
+padding-left: 30px;
+padding-right: 30px;}
 
 .bod {
 border: 4px solid black;
@@ -41,3 +46,7 @@ padding-bottom: 30px;}
 .blueimp-gallery-carousel {height: auto;
 width: 640;
 display: block;}
+
+.list {text-align: center;
+font-size: 50px;
+font-family: Comfortaa;}
