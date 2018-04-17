@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQ Plugins</title>
+    <link rel="stylesheet" href="gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <div class="wrapper">
+    <h1>Welcome to the
+      <span class="three Fascinate number">3</span>
+      <span class="zero Fascinate number">0</span>
+      <span class="five Fascinate ">5</span>
+    </h1>
+    <div class="banner">
+      <ul id="links">
+        <li>
+          <a href="images/bridge.jpg">
+          <img src="images/bridge.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="images/coralgables.jpg">
+            <img src="images/coralgables.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="images/city-miami.jpg">
+            <img src="images/city-miami.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="images/sebastian.jpg">
+            <img src="images/sebastian.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="images/umiami.jpg">
+            <img src="images/umiami.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="images/university.jpg">
+            <img src="images/university.jpg" alt="">
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
+      <div class="slides"></div>
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+  </div>
+  <p class="intro">Miami is home to many entertainment venues, theaters, museums, parks and performing arts centers. The newest addition to the Miami arts scene is the Adrienne Arsht Center for the Performing Arts, the second-largest performing arts center in the United States after the Lincoln Center in New York City, and is the home of the Florida Grand Opera. </p>
+  <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Downtown</a></li>
+    <li><a href="#tabs-2">Coral Gables</a></li>
+    <li><a href="#tabs-3">Miami Beach</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Downtown Miami is a busy shopping area with cultural and event venues. During the day, the open-air malls, department stores and jewelry shops are busy with foot traffic, while at night, crowds descend on the American Airlines Arena for Miami Heat basketball games and big-name concerts. The Adrienne Arsht Center hosts the Miami City Ballet and Florida Grand Opera, and the Pérez Art Museum Miami shows contemporary art.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Coral Gables is a city near Miami, in Florida. It's home to the 1920s Venetian Pool, carved from a rock quarry, with its grottoes, towers and bridge. Coral Gables Merrick House is the restored childhood home of city founder George Merrick. Fairchild Tropical Botanic Garden includes tree-lined lakes, a tropical rainforest and a butterfly display. The collections at Lowe Art Museum include Cuban and Caribbean works.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Miami Beach is a south Florida island city, connected by bridges to mainland Miami. Wide beaches stretch from North Shore Open Space Park, past palm-lined Lummus Park to South Pointe Park. The southern end, South Beach, is known for its international cachet with models and celebrities, and its early-20th-century architecture in the Art Deco Historic district with pastel-colored buildings, especially on Ocean Drive.</p>
+  </div>
+</div>
+  <h2 class="white">Plugins used</h2>
+  <ul class="white">
+    <li>
+      <a href="https://github.com/blueimp/Gallery/blob/master/README.md">Blueimp Gallery</a>
+    </li>
+    <li>
+      <a href="https://github.com/karacas/imgLiquid/">imgLiquid</a>
+    </li>
+    <li>
+      <a href="https://jqueryui.com/tabs/">Tabs (jQuery UI)</a>
+    </li>
+  </ul>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="karacas/js/imgLiquid.js"></script>
+<script src="gallery/js/blueimp-gallery.min.js"></script>
+<script
+			  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+			  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+			  crossorigin="anonymous"></script>
+
+<!-- imgLiquid Initialized -->
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".banner li").imgLiquid();
+});
+</script>
+
+<!-- Gallery Initialized -->
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+<!-- Tabs Initialized -->
+<script>
+$( function() {
+  $( "#tabs" ).tabs();
+} );
+</script>
+
+<!-- Slide and other effects -->
+<script>
+$( function() {
+  // run the currently selected effect
+  function runEffect() {
+    // get effect type from
+    var selectedEffect = 'slide';
+
+    // Most effect types need no options passed by default
+    var options = {};
+    // some effects have required parameters
+    if ( selectedEffect === "scale" ) {
+      options = { percent: 50 };
+    } else if ( selectedEffect === "transfer" ) {
+      options = { to: ".number", className: "ui-effects-transfer" };
+    } else if ( selectedEffect === "size" ) {
+      options = { to: { width: 200, height: 60 } };
+    }
+
+    // Run the effect
+    $( ".number" ).effect( selectedEffect, options, 500, callback );
+  };
+  // Callback function to bring a hidden box back
+  function callback() {
+    setTimeout(function() {
+      $( ".number" ).removeAttr( "style" ).hide().fadeIn();
+    }, 1000 );
+  };
+  // Set effect from select menu value
+  $( ".number" ).on( "mouseover", function() {
+    runEffect();
+    return false;
+  });
+  runEffect();
+});
+
+</script>
+  </body>
+</html>

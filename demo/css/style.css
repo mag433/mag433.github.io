@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+
+body {
+ background-color: #000000;
+}
+
+h1 {
+  font-size: 64px;
+  width: 680px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF
+}
+.banner {
+ display: block;
+ width: 500px;
+ height: 300px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.banner ul { margin: 0; padding: 0}
+.banner li {
+ display: inline-block;
+ width: 150px;
+ height: 150px;
+ margin:0.2rem;
+}
+.intro {
+ display: block;
+ width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 3rem;
+ color: #FFFFFF;
+ font-size: 24px;
+ font-family: 'Arial', sans-serif;
+ text-align: justify;
+}
+#tabs {
+ display: block;
+ width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 3rem;
+ font-size: 16px;
+ font-family: 'Arial', sans-serif;
+}
+.Fascinate { font-family: 'Fascinate Inline', cursive; }
+
+.three, .zero, .five { font-size: 128px;
+}
+.white { color: #FFFFFF;}
+.three { color: #DC008A;
+ -webkit-transform: rotate(7.5deg);
+     -ms-transform: rotate(7.5deg);
+   transform: rotate(7.5deg);
+ display: inline-block;}
+.zero { color: #DC708A;
+ rotate(-7.5deg);
+     -ms-transform: rotate(-7.5deg);
+   transform: rotate(-7.5deg);
+ display: inline-block; }
+.five { color: #DC0089;
+ rotate(-27.5deg);
+     -ms-transform: rotate(-27.5deg);
+   transform: rotate(-27.5deg);
+ display: inline-block;}

@@ -1,0 +1,20 @@
+.marquee {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+  font-size: 30px;
+}
+
+.imagess {
+  display: block;
+  margin-left: inherit;
+  margin-right: inherit;
+  width: 90%;
+  padding-left: 30px;
+
+}
+
+.haha {font-size: 100;
+text-align: center;}
+
+.bod {background-color: #ccc}

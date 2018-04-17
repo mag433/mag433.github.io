@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Barcelona</title>
+    <link rel="stylesheet" href="gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="style.css">
+<main class="haha">
+  Welcome To Barcelona
+</main>
+  </head>
+  <body class="bod">
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div id="links" class="imagess">
+    <a href="images/barcelona1l.jpg" title="barc1" >
+        <img src="images/barcelona1s.png" alt="barc1" height="200">
+    </a>
+    <a href="images/barcelona2l.jpg" title="barc2">
+        <img src="images/barcelona2s.png" alt="barc2" height="200">
+    </a>
+    <a href="images/barcelona3l.jpg" title="barc3">
+        <img src="images/barcelona3s.png" alt="barc3" height="200">
+
+        <a href="images/barcelona4l.jpg" title="barc4">
+            <img src="images/barcelona4s.png" alt="barc4" height="200">
+        </a>
+        <a href="images/barcelona5l.jpg" title="barc5">
+            <img src="images/barcelona5s.png" alt="barc5" height="200">
+        </a>
+        <a href="images/barcelona6l.jpg" title="barc6">
+            <img src="images/barcelona6s.png" alt="barc6" height="200">
+    </a>
+</div>
+
+
+
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div class="marquee">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <script src="gallery/js/blueimp-gallery.min.js"></script>
+
+  <script src="marquee/jquery.marquee.min.js">
+
+  </script>
+
+
+  <!-- <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script> -->
+
+<script>
+$('.marquee').marquee();
+
+
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>
+  </body>
+</html>
